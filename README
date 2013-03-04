@@ -1,0 +1,14 @@
+passphrase
+==========
+
+Securely computes a key from a passphrase and salt.
+
+-b --output-bytes=N  Number of bytes to output. The default is 32,
+                     the number of bytes in a Bitcoin private key.
+-s --salt-file=FILE  The file to save salt info in. The default is
+                     ./salt. An empty string or '/dev/null' will
+                     disable writing a salt file.
+-e --echo            Echo the passphrase.
+--help               Show this help.
+
+Requires passlib.
